@@ -1,0 +1,178 @@
+*{
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+
+body{
+  background-color: #fff;
+}
+main{
+  color: #fff;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+}
+
+.background{
+  color: #fff;
+}
+
+.sedans,.suvs,.luxury{
+  height: auto;
+  margin-inline: auto;
+  padding: 2em 0 2em 4.5em;
+  width: 45%;
+}
+
+.sedans{
+  background-color: hsl(31, 77%, 52%);
+  border-radius: .65em .65em 0 0;
+}
+
+.suvs{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 .65em .65em;
+}
+
+.sedans > img,
+.suvs > img, 
+.luxury > img{
+  height: 4em;
+}
+
+.sedans > h1,
+.suvs > h1, 
+.luxury > h1 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  margin-block: .8em;
+  text-transform: uppercase;
+}
+
+.sedans > p,
+.suvs > p, 
+.luxury > p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4em;
+  width: 75%;
+}
+
+.sedans > .btn,
+.suvs > .btn,
+.luxury > .btn{
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 2.5em;
+  display: inline-block;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-block: 1.5em;
+  outline: none;
+  padding: .75em 1.8em;
+  text-decoration: none;
+  text-transform: capitalize;
+
+}
+
+.sedans > .btn{
+  color: hsl(31, 77%, 52%);
+}
+.sedans > .btn:hover {
+background-color: hsl(31, 77%, 52%);
+color: #fff;
+cursor: pointer;
+}
+
+.suvs > .btn{
+  color: hsl(184, 100%, 22%);
+}
+.suvs > .btn:hover{
+  background-color: hsl(184, 100%, 22%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.luxury > .btn{
+  color: hsl(179, 100%, 13%);
+}
+.luxury > .btn:hover{
+  background-color: hsl(179, 100%, 13%);
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 90em) {
+  
+  main{
+    background-color: #fff;
+    height: 100vh;
+  }
+
+  .background{
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+    height: 65vh;
+  }
+
+  .sedans,.suvs,.luxury{
+    height: 80%;
+    width: 80%;
+    padding: 5em 0 5em 6em;
+  }
+
+  .sedans{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .luxury{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+.sedans > img,
+.suvs > img, 
+.luxury > img{
+  height: 5em;
+}
+
+.sedans > h1,
+.suvs > h1, 
+.luxury > h1{
+  font-size: 5em;
+}
+
+  .sedans > p, 
+  .suvs > p, 
+  .luxury > p{
+    font-size: 2.5rem;
+    margin-bottom: 4em;
+    width: 85%;
+  }
+
+  .sedans > .btn,
+  .suvs > .btn,
+  .luxury > .btn{
+    font-size: 2rem;
+    margin-bottom: 1.25em;
+    width: 55%;
+  }
+}
