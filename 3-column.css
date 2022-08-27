@@ -116,7 +116,7 @@ cursor: pointer;
   main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 85%;
+    width: 43.2rem;
   }
   .sedans{
     border-radius: .65em 0 0 .65em;
@@ -125,12 +125,17 @@ cursor: pointer;
   .luxury{
     border-radius: 0 .65em .65em 0;
   }
+  .sedans > p,
+  .suvs > p, 
+  .luxury > p {
+  margin-bottom: 3.5rem;
+  }
 }
 @media (min-width: 90em) { 
   main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 60%;
+    width: 58%;
   }
   .sedans{
     border-radius: .65em 0 0 .65em;
